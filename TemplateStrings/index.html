@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>template strings</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+  <div id="app">
+    <h1>
+    directives
+    </h1>
+    <h2>
+    v-once
+    </h2>
+    <p v-once>
+      {{ message1 }}
+    </p>
+    <p>
+      {{ message1 }}
+    </p>
+    <button v-on:click="clickHandler">
+    Click!
+    </button>
+
+    <h2>
+    v-pre
+    </h2>
+    <p v-pre>
+      {{ message2 }}
+    </p>
+    <p>
+      {{ message2 }}
+    </p>
+
+    <h2>
+    v-html
+    </h2>
+    <p v-html="message3"></p>
+    <p>
+      {{ message3 }}
+    </p>
+
+    <h2>
+    v-cloak
+    </h2>
+    <p v-cloak>
+      {{ message4 }}
+    </p>
+    <p>
+      {{ message4 }}
+    </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+
+</html>
